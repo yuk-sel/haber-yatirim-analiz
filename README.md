@@ -80,7 +80,7 @@ TELEGRAM_BOT_TOKEN:
 
 TELEGRAM_CHAT_ID:
   Oluşturduğunuz bota Telegram üzerinden gidin, ona herhangi bir mesaj gönderin (örneğin "merhaba" ), böylece bot sizinle bir konuşma başlatmış olur.
-  Sonra tarayıcınızdan şu adrese gidin (TOKEN yerine kendi token'ınızı yazın): https://api.telegram.org/bot<TOKEN>/getUpdates
+  Sonra tarayıcınızdan şu adrese gidin (TOKEN yerine kendi token'ınızı yazın): https://api.telegram.org/bot[TOKEN]/getUpdates
   Karşınıza bir JSON çıkacak, içinde "chat":{"id": ...} şeklinde bir kısım göreceksiniz — oradaki sayı sizin TELEGRAM_CHAT_ID'niz. 
 ## Çalıştırma
 
