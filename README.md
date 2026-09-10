@@ -69,8 +69,19 @@ veri/
    TELEGRAM_BOT_TOKEN=your_bot_token_here
    TELEGRAM_CHAT_ID=your_chat_id_here
    ```
-   `.env` dosyası `.gitignore` içinde olduğu için repoya gönderilmez; kendi gizli bilgilerinizi asla commit etmeyin.
+TELEGRAM_BOT_TOKEN:
+  Telegram uygulamasını açın (telefon veya bilgisayar).
+  Arama kısmına BotFather yazın, resmi hesabı bulun (mavi onay işaretli, kullanıcı adı @BotFather).
+  Onunla sohbeti başlatın ve /newbot komutunu gönderin.
+  Size botun görünen adını soracak (istediğiniz bir isim, örneğin "Haber Yatırım Bot").
+  Sonra botun kullanıcı adını soracak — bu mutlaka bot ile bitmeli (örneğin haber_yatirim_analiz_bot).
+  Bunları verdikten sonra BotFather size uzun bir token verecek (şuna benzer bir şey: 123456789:ABCdefGhIJKlmNoPQRsTUVwxyZ). 
+  Bu TELEGRAM_BOT_TOKEN olur.
 
+TELEGRAM_CHAT_ID:
+  Oluşturduğunuz bota Telegram üzerinden gidin, ona herhangi bir mesaj gönderin (örneğin "merhaba" ), böylece bot sizinle bir konuşma başlatmış olur.
+  Sonra tarayıcından şu adrese gidin (TOKEN yerine kendi token'ınızı yazın): https://api.telegram.org/bot<TOKEN>/getUpdates
+  Karşınıza bir JSON çıkacak, içinde "chat":{"id": ...} şeklinde bir kısım göreceksiniz — oradaki sayı sizin TELEGRAM_CHAT_ID'niz. 
 ## Çalıştırma
 
 Pipeline'ı tek seferlik çalıştırmak için:
