@@ -13,5 +13,4 @@ def bildirim_gonder(mesaj):
     print(cevap.status_code)
     print(cevap.text)
 
-bildirim_gonder("testinkoo")
 
